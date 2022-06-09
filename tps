@@ -817,6 +817,8 @@ TextBox.FocusLost:Connect(function(enterPressed)
             del()
             game:GetService('RunService').Stepped:connect(function()
                 game.Players.LocalPlayer.Character.Torso.CanCollide = false
+                game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+                game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
             end)
         end
         
